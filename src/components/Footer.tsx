@@ -1,4 +1,5 @@
-import { Github, Twitter } from "lucide-react";
+
+import { Instagram, Mail, Phone } from "lucide-react";
 import { Button } from "./ui/button";
 
 const Footer = () => {
@@ -8,47 +9,50 @@ const Footer = () => {
         <div className="glass glass-hover rounded-xl p-8">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="space-y-4">
-              <h3 className="font-medium text-lg">CryptoTrade</h3>
+              <h3 className="font-medium text-lg">Anfitrião 10x</h3>
               <p className="text-sm text-muted-foreground">
-                Empowering traders with advanced crypto trading solutions.
+                Transformando propriedades em negócios de sucesso no Airbnb.
               </p>
               <div className="flex space-x-4">
                 <Button variant="ghost" size="icon">
-                  <Twitter className="w-4 h-4" />
+                  <Instagram className="w-4 h-4" />
                 </Button>
                 <Button variant="ghost" size="icon">
-                  <Github className="w-4 h-4" />
+                  <Mail className="w-4 h-4" />
+                </Button>
+                <Button variant="ghost" size="icon">
+                  <Phone className="w-4 h-4" />
                 </Button>
               </div>
             </div>
 
             <div className="space-y-4">
-              <h4 className="font-medium">Trading</h4>
+              <h4 className="font-medium">Serviços</h4>
               <ul className="space-y-2">
                 <li>
-                  <a href="#features" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                    Markets
+                  <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                    Consultoria Airbnb
                   </a>
                 </li>
                 <li>
-                  <a href="#pricing" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                    Trading Fees
+                  <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                    Otimização de Anúncios
                   </a>
                 </li>
               </ul>
             </div>
 
             <div className="space-y-4">
-              <h4 className="font-medium">Resources</h4>
+              <h4 className="font-medium">Recursos</h4>
               <ul className="space-y-2">
                 <li>
                   <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                    Trading Guide
+                    Guia do Anfitrião
                   </a>
                 </li>
                 <li>
                   <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                    Market Analysis
+                    Análise de Mercado
                   </a>
                 </li>
               </ul>
@@ -59,12 +63,12 @@ const Footer = () => {
               <ul className="space-y-2">
                 <li>
                   <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                    Privacy Policy
+                    Política de Privacidade
                   </a>
                 </li>
                 <li>
                   <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                    Terms of Service
+                    Termos de Serviço
                   </a>
                 </li>
               </ul>
@@ -73,7 +77,7 @@ const Footer = () => {
 
           <div className="mt-8 pt-8 border-t border-white/10">
             <p className="text-sm text-muted-foreground text-center">
-              © {new Date().getFullYear()} Rezaul Arif. All rights reserved.
+              © {new Date().getFullYear()} Anfitrião 10x. Todos os direitos reservados.
             </p>
           </div>
         </div>

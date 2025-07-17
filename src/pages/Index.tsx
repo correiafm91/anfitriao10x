@@ -88,7 +88,7 @@ const Index = () => {
             </div>
             <div className="flex items-center gap-2">
               <Users className="w-4 h-4 text-primary" />
-              <span>+500 anfitriões atendidos</span>
+              <span>+100 anfitriões atendidos</span>
             </div>
             <div className="flex items-center gap-2">
               <Star className="w-4 h-4 text-primary" />
@@ -107,27 +107,63 @@ const Index = () => {
           transition={{ delay: 0.7 }}
           className="relative mx-auto max-w-5xl mt-20"
         >
-          <Card className="glass rounded-xl overflow-hidden p-8">
-            <div className="text-center">
-              <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-primary/10 mb-6">
-                <TrendingUp className="w-10 h-10 text-primary" />
+          <Card className="glass rounded-xl overflow-hidden p-8 relative">
+            {/* Background Pattern */}
+            <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-orange-500/5 rounded-xl"></div>
+            
+            {/* Content */}
+            <div className="relative z-10">
+              <div className="flex items-center justify-center mb-8">
+                <div className="relative">
+                  <div className="w-24 h-24 rounded-full bg-gradient-to-br from-primary to-orange-400 flex items-center justify-center shadow-lg">
+                    <TrendingUp className="w-12 h-12 text-white" />
+                  </div>
+                  <div className="absolute -top-2 -right-2 w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center">
+                    <span className="text-white text-sm font-bold">10x</span>
+                  </div>
+                </div>
               </div>
-              <h3 className="text-2xl font-bold mb-4">Dashboard Anfitrião 10x</h3>
-              <p className="text-gray-400 mb-6">
-                Acompanhe seus resultados em tempo real com nossa plataforma exclusiva
+              
+              <h3 className="text-3xl font-bold mb-4 text-center bg-gradient-to-r from-primary to-orange-400 bg-clip-text text-transparent">
+                Dashboard Anfitrião 10x
+              </h3>
+              
+              <p className="text-gray-300 mb-8 text-center max-w-2xl mx-auto">
+                Plataforma exclusiva para acompanhar seus resultados em tempo real com métricas avançadas e insights personalizados
               </p>
+              
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div className="bg-black/40 rounded-lg p-4">
-                  <div className="text-3xl font-bold text-primary mb-2">+300%</div>
-                  <div className="text-sm text-gray-400">Aumento médio de receita</div>
+                <div className="bg-black/60 backdrop-blur-sm rounded-xl p-6 border border-white/10 hover:border-primary/30 transition-all duration-300">
+                  <div className="flex items-center gap-3 mb-3">
+                    <div className="w-8 h-8 bg-primary/20 rounded-lg flex items-center justify-center">
+                      <TrendingUp className="w-4 h-4 text-primary" />
+                    </div>
+                    <span className="text-sm text-gray-400">Receita</span>
+                  </div>
+                  <div className="text-3xl font-bold text-primary mb-1">+300%</div>
+                  <div className="text-sm text-gray-400">Aumento médio</div>
                 </div>
-                <div className="bg-black/40 rounded-lg p-4">
-                  <div className="text-3xl font-bold text-primary mb-2">95%</div>
-                  <div className="text-sm text-gray-400">Taxa de ocupação</div>
+                
+                <div className="bg-black/60 backdrop-blur-sm rounded-xl p-6 border border-white/10 hover:border-orange-500/30 transition-all duration-300">
+                  <div className="flex items-center gap-3 mb-3">
+                    <div className="w-8 h-8 bg-orange-500/20 rounded-lg flex items-center justify-center">
+                      <Users className="w-4 h-4 text-orange-500" />
+                    </div>
+                    <span className="text-sm text-gray-400">Ocupação</span>
+                  </div>
+                  <div className="text-3xl font-bold text-orange-500 mb-1">95%</div>
+                  <div className="text-sm text-gray-400">Taxa média</div>
                 </div>
-                <div className="bg-black/40 rounded-lg p-4">
-                  <div className="text-3xl font-bold text-primary mb-2">4.9★</div>
-                  <div className="text-sm text-gray-400">Avaliação média</div>
+                
+                <div className="bg-black/60 backdrop-blur-sm rounded-xl p-6 border border-white/10 hover:border-primary/30 transition-all duration-300">
+                  <div className="flex items-center gap-3 mb-3">
+                    <div className="w-8 h-8 bg-primary/20 rounded-lg flex items-center justify-center">
+                      <Star className="w-4 h-4 text-primary" />
+                    </div>
+                    <span className="text-sm text-gray-400">Avaliação</span>
+                  </div>
+                  <div className="text-3xl font-bold text-primary mb-1">4.9★</div>
+                  <div className="text-sm text-gray-400">Nota média</div>
                 </div>
               </div>
             </div>
