@@ -1,5 +1,6 @@
+
 import { motion } from "framer-motion";
-import { ArrowRight, Command } from "lucide-react";
+import { ArrowRight, Home, TrendingUp, Users, Star, Shield } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Navigation from "@/components/Navigation";
 import { FeaturesSection } from "@/components/features/FeaturesSection";
@@ -7,6 +8,9 @@ import { PricingSection } from "@/components/pricing/PricingSection";
 import LogoCarousel from "@/components/LogoCarousel";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import Footer from "@/components/Footer";
+import FAQSection from "@/components/FAQSection";
+import ProfitabilityChart from "@/components/ProfitabilityChart";
+import OccupancyChart from "@/components/OccupancyChart";
 import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
 
 const Index = () => {
@@ -21,7 +25,6 @@ const Index = () => {
         transition={{ duration: 0.5 }}
         className="relative container px-4 pt-40 pb-20"
       >
-        {/* Background */}
         <div 
           className="absolute inset-0 -z-10 bg-[#0A0A0A]"
         />
@@ -33,19 +36,19 @@ const Index = () => {
           className="inline-block mb-4 px-4 py-1.5 rounded-full glass"
         >
           <span className="text-sm font-medium">
-            <Command className="w-4 h-4 inline-block mr-2" />
-            Next-gen crypto trading platform
+            <Home className="w-4 h-4 inline-block mr-2" />
+            Marketing Profissional para Airbnb
           </span>
         </motion.div>
         
         <div className="max-w-4xl relative z-10">
-          <h1 className="text-5xl md:text-7xl font-normal mb-4 tracking-tight text-left">
+          <h1 className="text-5xl md:text-7xl font-bold mb-4 tracking-tight text-left">
             <span className="text-gray-200">
-              <TextGenerateEffect words="Trade crypto with" />
+              <TextGenerateEffect words="Multiplique sua receita" />
             </span>
             <br />
-            <span className="text-white font-medium">
-              <TextGenerateEffect words="confidence & security" />
+            <span className="text-primary font-bold">
+              <TextGenerateEffect words="no Airbnb em 30 dias" />
             </span>
           </h1>
           
@@ -55,40 +58,87 @@ const Index = () => {
             transition={{ delay: 0.4 }}
             className="text-lg md:text-xl text-gray-200 mb-8 max-w-2xl text-left"
           >
-            Experience seamless cryptocurrency trading with advanced features, real-time analytics, and institutional-grade security.{" "}
-            <span className="text-white">Start trading in minutes.</span>
+            Transforme sua propriedade em uma <span className="text-primary font-bold">máquina de receita</span> com nossas estratégias comprovadas de marketing, otimização de preços e gestão completa.{" "}
+            <span className="text-white">Crescimento médio de 300% garantido.</span>
           </motion.p>
           
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5 }}
-            className="flex flex-col sm:flex-row gap-4 items-start"
+            className="flex flex-col sm:flex-row gap-4 items-start mb-8"
           >
             <Button size="lg" className="button-gradient">
-              Start Trading Now
+              Quero Multiplicar Minha Receita
             </Button>
             <Button size="lg" variant="link" className="text-white">
-              View Markets <ArrowRight className="ml-2 w-4 h-4" />
+              Ver Resultados <ArrowRight className="ml-2 w-4 h-4" />
             </Button>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.6 }}
+            className="flex flex-wrap gap-6 text-sm text-muted-foreground"
+          >
+            <div className="flex items-center gap-2">
+              <TrendingUp className="w-4 h-4 text-primary" />
+              <span>+300% de receita média</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <Users className="w-4 h-4 text-primary" />
+              <span>+500 anfitriões atendidos</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <Star className="w-4 h-4 text-primary" />
+              <span>4.9/5 de satisfação</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <Shield className="w-4 h-4 text-primary" />
+              <span>Garantia de 30 dias</span>
+            </div>
           </motion.div>
         </div>
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.6 }}
+          transition={{ delay: 0.7 }}
           className="relative mx-auto max-w-5xl mt-20"
         >
           <div className="glass rounded-xl overflow-hidden">
             <img
               src="/lovable-uploads/c32c6788-5e4a-4fee-afee-604b03113c7f.png"
-              alt="CryptoTrade Dashboard"
+              alt="Dashboard Anfitrião 10x"
               className="w-full h-auto"
             />
           </div>
         </motion.div>
       </motion.section>
+
+      {/* Charts Section */}
+      <section className="container px-4 py-20">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+          className="text-center mb-16"
+        >
+          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+            Resultados <span className="text-primary">Comprovados</span>
+          </h2>
+          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+            Veja como nossos clientes transformaram seus negócios no Airbnb
+          </p>
+        </motion.div>
+
+        <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+          <ProfitabilityChart />
+          <OccupancyChart />
+        </div>
+      </section>
 
       {/* Logo Carousel */}
       <LogoCarousel />
@@ -108,6 +158,9 @@ const Index = () => {
         <TestimonialsSection />
       </div>
 
+      {/* FAQ Section */}
+      <FAQSection />
+
       {/* CTA Section */}
       <section className="container px-4 py-20 relative bg-black">
         <div 
@@ -125,15 +178,18 @@ const Index = () => {
           className="bg-[#0A0A0A]/80 backdrop-blur-lg border border-white/10 rounded-2xl p-8 md:p-12 text-center relative z-10"
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Ready to start trading?
+            Pronto para <span className="text-primary">10x</span> sua receita?
           </h2>
           <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Join thousands of traders who have already discovered the power of our platform.
+            Junte-se a centenas de anfitriões que já transformaram suas propriedades em negócios de sucesso.
           </p>
           <Button size="lg" className="button-gradient">
-            Create Account
+            Começar Agora - Consulta Gratuita
             <ArrowRight className="ml-2 w-4 h-4" />
           </Button>
+          <p className="text-sm text-muted-foreground mt-4">
+            ✓ Sem compromisso ✓ Análise gratuita ✓ Resultados em 30 dias
+          </p>
         </motion.div>
       </section>
 

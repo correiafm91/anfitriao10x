@@ -1,45 +1,59 @@
+
 "use client";
 
 import { motion } from "framer-motion";
 import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
 import { Card } from "./ui/card";
+import { Star } from "lucide-react";
 
 const testimonials = [
   {
-    name: "Michael Chen",
-    role: "Professional Trader",
+    name: "Carlos Silva",
+    role: "Proprietário de Apartamento no Ipanema",
     image: "https://avatars.githubusercontent.com/u/1234567?v=4",
-    content: "The real-time market data and advanced trading features have significantly improved my trading performance. The platform's security measures give me peace of mind."
+    content: "Em 3 meses minha receita triplicou! O Anfitrião 10x transformou meu apartamento em uma máquina de fazer dinheiro. A taxa de ocupação passou de 40% para 95%.",
+    rating: 5,
+    result: "+300% receita"
   },
   {
-    name: "Sarah Johnson",
-    role: "Crypto Fund Manager",
+    name: "Marina Santos",
+    role: "Anfitriã de Pousada em Búzios",
     image: "https://avatars.githubusercontent.com/u/2345678?v=4",
-    content: "CryptoTrade's institutional-grade tools have transformed our trading strategy. The API integration and automated features have saved us countless hours."
+    content: "Antes eu tinha dor de cabeça com preços e comunicação. Agora tudo é automático e minha pousada está sempre lotada. Melhor investimento que já fiz!",
+    rating: 5,
+    result: "+250% ocupação"
   },
   {
-    name: "David Wilson",
-    role: "Early Crypto Investor",
+    name: "Roberto Oliveira",
+    role: "Investidor Imobiliário",
     image: "https://avatars.githubusercontent.com/u/3456789?v=4",
-    content: "The customer support is exceptional, and the platform's intuitive design made getting started with crypto trading seamless. A game-changer for both beginners and pros."
+    content: "Tenho 5 propriedades no Airbnb e o Anfitrião 10x cuida de tudo. Minha receita passou de R$ 8.000 para R$ 32.000 mensais. Equipe sensacional!",
+    rating: 5,
+    result: "+400% ROI"
   },
   {
-    name: "Emily Zhang",
-    role: "DeFi Developer",
+    name: "Ana Costa",
+    role: "Proprietária de Chalé em Gramado",
     image: "https://avatars.githubusercontent.com/u/4567890?v=4",
-    content: "We've seen remarkable improvements in our trading efficiency since switching to CryptoTrade. The smart order routing and liquidity aggregation are particularly impressive."
+    content: "Eu era iniciante no Airbnb e estava perdida. O time me ensinou tudo e otimizou meu anúncio. Agora tenho lista de espera de hóspedes!",
+    rating: 5,
+    result: "+180% reservas"
   },
   {
-    name: "James Rodriguez",
-    role: "Crypto Security Expert",
+    name: "Paulo Mendes",
+    role: "Anfitrião Superhost em Floripa",
     image: "https://avatars.githubusercontent.com/u/5678901?v=4",
-    content: "The security features are robust and the regular updates keep us ahead of emerging threats. It's exactly what the crypto industry needed."
+    content: "Já era Superhost, mas com o Anfitrião 10x consegui maximizar ainda mais meus resultados. A gestão de preços dinâmica é revolucionária!",
+    rating: 5,
+    result: "+150% receita"
   },
   {
-    name: "Lisa Thompson",
-    role: "Portfolio Manager",
+    name: "Fernanda Lima",
+    role: "Proprietária de Casa na Chapada",
     image: "https://avatars.githubusercontent.com/u/6789012?v=4",
-    content: "The platform's ability to handle complex trading strategies while maintaining simplicity in its interface is remarkable. It's been invaluable for our portfolio management."
+    content: "Saí do vermelho para o lucro em apenas 2 meses. O atendimento é impecável e os resultados falam por si só. Recomendo de olhos fechados!",
+    rating: 5,
+    result: "+320% lucro"
   }
 ];
 
@@ -54,9 +68,11 @@ const TestimonialsSection = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="text-center mb-16"
         >
-          <h2 className="text-5xl font-normal mb-4">Trusted by Traders</h2>
+          <h2 className="text-5xl font-normal mb-4">
+            Anfitriões que <span className="text-primary">Multiplicaram</span> seus Resultados
+          </h2>
           <p className="text-muted-foreground text-lg">
-            Join thousands of satisfied traders on CryptoTrade
+            Veja os depoimentos reais dos nossos clientes
           </p>
         </motion.div>
 
@@ -64,8 +80,8 @@ const TestimonialsSection = () => {
           <div className="relative flex overflow-hidden py-4">
             <div className="animate-marquee flex min-w-full shrink-0 items-stretch gap-8">
               {testimonials.map((testimonial, index) => (
-                <Card key={`${index}-1`} className="w-[400px] shrink-0 bg-black/40 backdrop-blur-xl border-white/5 hover:border-white/10 transition-all duration-300 p-8">
-                  <div className="flex items-center gap-4 mb-6">
+                <Card key={`${index}-1`} className="w-[400px] shrink-0 bg-black/40 backdrop-blur-xl border-white/5 hover:border-primary/20 transition-all duration-300 p-8">
+                  <div className="flex items-center gap-4 mb-4">
                     <Avatar className="h-12 w-12">
                       <AvatarImage src={testimonial.image} />
                       <AvatarFallback>{testimonial.name[0]}</AvatarFallback>
@@ -75,16 +91,29 @@ const TestimonialsSection = () => {
                       <p className="text-sm text-white/60">{testimonial.role}</p>
                     </div>
                   </div>
-                  <p className="text-white/70 leading-relaxed">
+                  
+                  <div className="flex mb-4">
+                    {[...Array(testimonial.rating)].map((_, i) => (
+                      <Star key={i} className="w-4 h-4 fill-primary text-primary" />
+                    ))}
+                  </div>
+                  
+                  <p className="text-white/70 leading-relaxed mb-4">
                     {testimonial.content}
                   </p>
+                  
+                  <div className="bg-primary/10 border border-primary/20 rounded-lg p-3">
+                    <p className="text-primary font-bold text-center">
+                      {testimonial.result}
+                    </p>
+                  </div>
                 </Card>
               ))}
             </div>
             <div className="animate-marquee flex min-w-full shrink-0 items-stretch gap-8">
               {testimonials.map((testimonial, index) => (
-                <Card key={`${index}-2`} className="w-[400px] shrink-0 bg-black/40 backdrop-blur-xl border-white/5 hover:border-white/10 transition-all duration-300 p-8">
-                  <div className="flex items-center gap-4 mb-6">
+                <Card key={`${index}-2`} className="w-[400px] shrink-0 bg-black/40 backdrop-blur-xl border-white/5 hover:border-primary/20 transition-all duration-300 p-8">
+                  <div className="flex items-center gap-4 mb-4">
                     <Avatar className="h-12 w-12">
                       <AvatarImage src={testimonial.image} />
                       <AvatarFallback>{testimonial.name[0]}</AvatarFallback>
@@ -94,9 +123,22 @@ const TestimonialsSection = () => {
                       <p className="text-sm text-white/60">{testimonial.role}</p>
                     </div>
                   </div>
-                  <p className="text-white/70 leading-relaxed">
+                  
+                  <div className="flex mb-4">
+                    {[...Array(testimonial.rating)].map((_, i) => (
+                      <Star key={i} className="w-4 h-4 fill-primary text-primary" />
+                    ))}
+                  </div>
+                  
+                  <p className="text-white/70 leading-relaxed mb-4">
                     {testimonial.content}
                   </p>
+                  
+                  <div className="bg-primary/10 border border-primary/20 rounded-lg p-3">
+                    <p className="text-primary font-bold text-center">
+                      {testimonial.result}
+                    </p>
+                  </div>
                 </Card>
               ))}
             </div>

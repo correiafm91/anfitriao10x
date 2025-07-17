@@ -1,5 +1,6 @@
+
 import { useState, useEffect } from "react";
-import { Command, Menu } from "lucide-react";
+import { Home, Menu } from "lucide-react";
 import { Button } from "./ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
 
@@ -20,7 +21,7 @@ const Navigation = () => {
     if (sectionId === 'testimonials') {
       const testimonialSection = document.querySelector('.animate-marquee');
       if (testimonialSection) {
-        const yOffset = -100; // Offset to account for the fixed header
+        const yOffset = -100;
         const y = testimonialSection.getBoundingClientRect().top + window.pageYOffset + yOffset;
         window.scrollTo({ top: y, behavior: 'smooth' });
       }
@@ -40,9 +41,10 @@ const Navigation = () => {
   };
 
   const navItems = [
-    { name: "Features", href: "#features", onClick: () => scrollToSection('features') },
-    { name: "Prices", href: "#pricing", onClick: () => scrollToSection('pricing') },
-    { name: "Testimonials", href: "#testimonials", onClick: () => scrollToSection('testimonials') },
+    { name: "Serviços", href: "#features", onClick: () => scrollToSection('features') },
+    { name: "Preços", href: "#pricing", onClick: () => scrollToSection('pricing') },
+    { name: "Depoimentos", href: "#testimonials", onClick: () => scrollToSection('testimonials') },
+    { name: "FAQ", href: "#faq", onClick: () => scrollToSection('faq') },
   ];
 
   return (
@@ -56,8 +58,8 @@ const Navigation = () => {
       <div className="mx-auto h-full px-6">
         <nav className="flex items-center justify-between h-full">
           <div className="flex items-center gap-2">
-            <Command className="w-5 h-5 text-primary" />
-            <span className="font-bold text-base">CryptoTrade</span>
+            <Home className="w-5 h-5 text-primary" />
+            <span className="font-bold text-base">Anfitrião <span className="text-primary">10x</span></span>
           </div>
 
           {/* Desktop Navigation */}
@@ -82,7 +84,7 @@ const Navigation = () => {
               size="sm"
               className="button-gradient"
             >
-              Start Trading
+              Começar Agora
             </Button>
           </div>
 
@@ -119,7 +121,7 @@ const Navigation = () => {
                     }}
                     className="button-gradient mt-4"
                   >
-                    Start Trading
+                    Começar Agora
                   </Button>
                 </div>
               </SheetContent>
