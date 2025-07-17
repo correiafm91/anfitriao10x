@@ -66,56 +66,32 @@ const StepsSection = () => {
         </p>
       </motion.div>
 
-      <div className="max-w-7xl mx-auto relative">
-        {/* Zigzag Path */}
-        <div className="absolute inset-0 hidden lg:block">
-          <svg className="w-full h-full" viewBox="0 0 800 600">
-            <path
-              d="M 150 100 L 650 100 L 150 200 L 650 200 L 150 300 L 650 300"
-              stroke="url(#zigzag-gradient)"
-              strokeWidth="2"
-              fill="none"
-              strokeDasharray="5,5"
-              className="opacity-30"
-            />
-            <defs>
-              <linearGradient id="zigzag-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                <stop offset="0%" stopColor="hsl(var(--primary))" />
-                <stop offset="100%" stopColor="hsl(var(--primary))" stopOpacity="0.5" />
-              </linearGradient>
-            </defs>
-          </svg>
-        </div>
-
-        {/* Steps Grid */}
-        <div className="grid lg:grid-cols-2 gap-8 relative z-10">
-          {steps.map((step, index) => (
-            <motion.div
-              key={step.number}
-              initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              className={`${index % 2 === 0 ? 'lg:justify-self-start' : 'lg:justify-self-end'} w-full max-w-md`}
-            >
-              <Card className="p-6 bg-black/40 backdrop-blur-xl border-white/5 hover:border-primary/20 transition-all duration-300 h-full relative">
-                {/* Step Number Badge */}
-                <div className="absolute -top-3 -right-3 w-8 h-8 bg-primary rounded-full flex items-center justify-center text-sm font-bold text-white">
-                  {step.number}
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        {steps.map((step, index) => (
+          <motion.div
+            key={step.number}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: index * 0.1 }}
+          >
+            <Card className="p-6 bg-black/40 backdrop-blur-xl border-white/5 hover:border-primary/20 transition-all duration-300 h-full relative">
+              {/* Step Number Badge */}
+              <div className="absolute -top-3 -right-3 w-8 h-8 bg-primary rounded-full flex items-center justify-center text-sm font-bold text-white">
+                {step.number}
+              </div>
+              
+              <div className="flex items-center gap-4 mb-4">
+                <div className={`w-12 h-12 rounded-lg bg-gradient-to-br ${step.color} flex items-center justify-center`}>
+                  <step.icon className="w-6 h-6 text-primary" />
                 </div>
-                
-                <div className="flex items-center gap-4 mb-4">
-                  <div className={`w-12 h-12 rounded-lg bg-gradient-to-br ${step.color} flex items-center justify-center`}>
-                    <step.icon className="w-6 h-6 text-primary" />
-                  </div>
-                </div>
-                
-                <h3 className="text-xl font-bold mb-3 text-white">{step.title}</h3>
-                <p className="text-white/70 leading-relaxed">{step.description}</p>
-              </Card>
-            </motion.div>
-          ))}
-        </div>
+              </div>
+              
+              <h3 className="text-xl font-bold mb-3 text-white">{step.title}</h3>
+              <p className="text-white/70 leading-relaxed">{step.description}</p>
+            </Card>
+          </motion.div>
+        ))}
       </div>
     </section>
   );

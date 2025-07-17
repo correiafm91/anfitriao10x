@@ -15,8 +15,8 @@ const Navigation = () => {
       <div className="container px-4 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-              <span className="text-black font-bold">A</span>
+            <div className="w-10 h-8 bg-primary rounded-lg flex items-center justify-center">
+              <span className="text-black font-bold text-sm">A10x</span>
             </div>
             <span className="text-xl font-bold text-white">Anfitrião 10x</span>
           </div>

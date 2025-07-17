@@ -14,11 +14,15 @@ const Footer = () => {
                 Transformando propriedades em negócios de sucesso no Airbnb.
               </p>
               <div className="flex space-x-4">
-                <Button variant="ghost" size="icon">
-                  <Instagram className="w-4 h-4" />
+                <Button variant="ghost" size="icon" asChild>
+                  <a href="https://www.instagram.com/anfitriao10x/" target="_blank" rel="noopener noreferrer">
+                    <Instagram className="w-4 h-4" />
+                  </a>
                 </Button>
-                <Button variant="ghost" size="icon">
-                  <Mail className="w-4 h-4" />
+                <Button variant="ghost" size="icon" asChild>
+                  <a href="mailto:contaparanegocios30@gmail.com">
+                    <Mail className="w-4 h-4" />
+                  </a>
                 </Button>
                 <Button variant="ghost" size="icon">
                   <Phone className="w-4 h-4" />

@@ -124,13 +124,9 @@ const Index = () => {
                 </div>
               </div>
               
-              <h3 className="text-3xl font-bold mb-4 text-center bg-gradient-to-r from-primary to-orange-400 bg-clip-text text-transparent">
+              <h3 className="text-3xl font-bold mb-8 text-center bg-gradient-to-r from-primary to-orange-400 bg-clip-text text-transparent">
                 Dashboard Anfitrião 10x
               </h3>
-              
-              <p className="text-gray-300 mb-8 text-center max-w-2xl mx-auto">
-                Plataforma exclusiva para acompanhar seus resultados em tempo real com métricas avançadas e insights personalizados
-              </p>
               
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div className="bg-black/60 backdrop-blur-sm rounded-xl p-6 border border-white/10 hover:border-primary/30 transition-all duration-300">
