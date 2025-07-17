@@ -3,9 +3,7 @@ import { motion } from "framer-motion";
 import { ArrowRight, Home, TrendingUp, Users, Star, Shield } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Navigation from "@/components/Navigation";
-import { FeaturesSection } from "@/components/features/FeaturesSection";
-import { PricingSection } from "@/components/pricing/PricingSection";
-import LogoCarousel from "@/components/LogoCarousel";
+import ContactForm from "@/components/ContactForm";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import Footer from "@/components/Footer";
 import FAQSection from "@/components/FAQSection";
@@ -37,7 +35,7 @@ const Index = () => {
         >
           <span className="text-sm font-medium">
             <Home className="w-4 h-4 inline-block mr-2" />
-            Marketing Profissional para Airbnb
+            Consultoria Profissional para Airbnb
           </span>
         </motion.div>
         
@@ -58,7 +56,7 @@ const Index = () => {
             transition={{ delay: 0.4 }}
             className="text-lg md:text-xl text-gray-200 mb-8 max-w-2xl text-left"
           >
-            Transforme sua propriedade em uma <span className="text-primary font-bold">máquina de receita</span> com nossas estratégias comprovadas de marketing, otimização de preços e gestão completa.{" "}
+            Transforme sua propriedade em uma <span className="text-primary font-bold">máquina de receita</span> com nossa consultoria especializada de marketing, otimização de preços e estratégias comprovadas.{" "}
             <span className="text-white">Crescimento médio de 300% garantido.</span>
           </motion.p>
           
@@ -140,17 +138,9 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Logo Carousel */}
-      <LogoCarousel />
-
-      {/* Features Section */}
-      <div id="features" className="bg-black">
-        <FeaturesSection />
-      </div>
-
-      {/* Pricing Section */}
-      <div id="pricing" className="bg-black">
-        <PricingSection />
+      {/* Contact Form Section */}
+      <div id="contact" className="bg-black">
+        <ContactForm />
       </div>
 
       {/* Testimonials Section */}

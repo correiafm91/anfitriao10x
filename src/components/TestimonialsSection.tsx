@@ -2,7 +2,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
+import { Avatar, AvatarFallback } from "./ui/avatar";
 import { Card } from "./ui/card";
 import { Star } from "lucide-react";
 
@@ -10,7 +10,7 @@ const testimonials = [
   {
     name: "Carlos Silva",
     role: "Proprietário de Apartamento no Ipanema",
-    image: "https://avatars.githubusercontent.com/u/1234567?v=4",
+    initial: "CS",
     content: "Em 3 meses minha receita triplicou! O Anfitrião 10x transformou meu apartamento em uma máquina de fazer dinheiro. A taxa de ocupação passou de 40% para 95%.",
     rating: 5,
     result: "+300% receita"
@@ -18,7 +18,7 @@ const testimonials = [
   {
     name: "Marina Santos",
     role: "Anfitriã de Pousada em Búzios",
-    image: "https://avatars.githubusercontent.com/u/2345678?v=4",
+    initial: "MS",
     content: "Antes eu tinha dor de cabeça com preços e comunicação. Agora tudo é automático e minha pousada está sempre lotada. Melhor investimento que já fiz!",
     rating: 5,
     result: "+250% ocupação"
@@ -26,7 +26,7 @@ const testimonials = [
   {
     name: "Roberto Oliveira",
     role: "Investidor Imobiliário",
-    image: "https://avatars.githubusercontent.com/u/3456789?v=4",
+    initial: "RO",
     content: "Tenho 5 propriedades no Airbnb e o Anfitrião 10x cuida de tudo. Minha receita passou de R$ 8.000 para R$ 32.000 mensais. Equipe sensacional!",
     rating: 5,
     result: "+400% ROI"
@@ -34,7 +34,7 @@ const testimonials = [
   {
     name: "Ana Costa",
     role: "Proprietária de Chalé em Gramado",
-    image: "https://avatars.githubusercontent.com/u/4567890?v=4",
+    initial: "AC",
     content: "Eu era iniciante no Airbnb e estava perdida. O time me ensinou tudo e otimizou meu anúncio. Agora tenho lista de espera de hóspedes!",
     rating: 5,
     result: "+180% reservas"
@@ -42,7 +42,7 @@ const testimonials = [
   {
     name: "Paulo Mendes",
     role: "Anfitrião Superhost em Floripa",
-    image: "https://avatars.githubusercontent.com/u/5678901?v=4",
+    initial: "PM",
     content: "Já era Superhost, mas com o Anfitrião 10x consegui maximizar ainda mais meus resultados. A gestão de preços dinâmica é revolucionária!",
     rating: 5,
     result: "+150% receita"
@@ -50,7 +50,7 @@ const testimonials = [
   {
     name: "Fernanda Lima",
     role: "Proprietária de Casa na Chapada",
-    image: "https://avatars.githubusercontent.com/u/6789012?v=4",
+    initial: "FL",
     content: "Saí do vermelho para o lucro em apenas 2 meses. O atendimento é impecável e os resultados falam por si só. Recomendo de olhos fechados!",
     rating: 5,
     result: "+320% lucro"
@@ -83,8 +83,9 @@ const TestimonialsSection = () => {
                 <Card key={`${index}-1`} className="w-[400px] shrink-0 bg-black/40 backdrop-blur-xl border-white/5 hover:border-primary/20 transition-all duration-300 p-8">
                   <div className="flex items-center gap-4 mb-4">
                     <Avatar className="h-12 w-12">
-                      <AvatarImage src={testimonial.image} />
-                      <AvatarFallback>{testimonial.name[0]}</AvatarFallback>
+                      <AvatarFallback className="bg-primary/10 text-primary font-bold">
+                        {testimonial.initial}
+                      </AvatarFallback>
                     </Avatar>
                     <div>
                       <h4 className="font-medium text-white/90">{testimonial.name}</h4>
@@ -115,8 +116,9 @@ const TestimonialsSection = () => {
                 <Card key={`${index}-2`} className="w-[400px] shrink-0 bg-black/40 backdrop-blur-xl border-white/5 hover:border-primary/20 transition-all duration-300 p-8">
                   <div className="flex items-center gap-4 mb-4">
                     <Avatar className="h-12 w-12">
-                      <AvatarImage src={testimonial.image} />
-                      <AvatarFallback>{testimonial.name[0]}</AvatarFallback>
+                      <AvatarFallback className="bg-primary/10 text-primary font-bold">
+                        {testimonial.initial}
+                      </AvatarFallback>
                     </Avatar>
                     <div>
                       <h4 className="font-medium text-white/90">{testimonial.name}</h4>

@@ -25,8 +25,8 @@ const faqs = [
     answer: "Oferecemos garantia de 30 dias. Se você não estiver satisfeito com os resultados, devolvemos 100% do valor investido, sem perguntas."
   },
   {
-    question: "Vocês cuidam da comunicação com os hóspedes?",
-    answer: "Sim! Nosso time cuida de toda a comunicação com os hóspedes, desde a reserva até o check-out, em português, inglês e espanhol, 24 horas por dia."
+    question: "Qual é a duração do serviço?",
+    answer: "Nosso projeto Anfitrião 10x é uma consultoria que dura de 2 a 3 semanas. Durante esse período, implementamos todas as estratégias necessárias para otimizar sua propriedade e maximizar suas receitas no Airbnb."
   }
 ];
 
@@ -55,7 +55,7 @@ const FAQSection = () => {
             Perguntas <span className="text-primary">Frequentes</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Tire suas dúvidas sobre nossos serviços de marketing para Airbnb
+            Tire suas dúvidas sobre nossa consultoria de marketing para Airbnb
           </p>
         </motion.div>
 
