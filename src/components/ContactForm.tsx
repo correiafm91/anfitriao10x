@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Phone, Mail, MessageCircle } from "lucide-react";
 
 const ContactForm = () => {
   return (
@@ -28,52 +27,10 @@ const ContactForm = () => {
         </motion.p>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
-        {/* Contact Info */}
+      <div className="max-w-2xl mx-auto">
         <motion.div
-          initial={{ opacity: 0, x: -20 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ delay: 0.2, duration: 0.5 }}
-          className="space-y-8"
-        >
-          <div className="glass rounded-xl p-8">
-            <h3 className="text-2xl font-bold mb-6">Entre em Contato</h3>
-            <div className="space-y-6">
-              <div className="flex items-center gap-4">
-                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
-                  <Phone className="w-6 h-6 text-primary" />
-                </div>
-                <div>
-                  <p className="text-white font-medium">Telefone</p>
-                  <p className="text-gray-400">(11) 99999-9999</p>
-                </div>
-              </div>
-              <div className="flex items-center gap-4">
-                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
-                  <Mail className="w-6 h-6 text-primary" />
-                </div>
-                <div>
-                  <p className="text-white font-medium">Email</p>
-                  <p className="text-gray-400">contato@anfitriao10x.com</p>
-                </div>
-              </div>
-              <div className="flex items-center gap-4">
-                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
-                  <MessageCircle className="w-6 h-6 text-primary" />
-                </div>
-                <div>
-                  <p className="text-white font-medium">WhatsApp</p>
-                  <p className="text-gray-400">(11) 99999-9999</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </motion.div>
-
-        {/* Contact Form */}
-        <motion.div
-          initial={{ opacity: 0, x: 20 }}
-          animate={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3, duration: 0.5 }}
           className="glass rounded-xl p-8"
         >

@@ -2,6 +2,7 @@
 import { motion } from "framer-motion";
 import { ArrowRight, Home, TrendingUp, Users, Star, Shield } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
 import Navigation from "@/components/Navigation";
 import ContactForm from "@/components/ContactForm";
 import TestimonialsSection from "@/components/TestimonialsSection";
@@ -9,6 +10,7 @@ import Footer from "@/components/Footer";
 import FAQSection from "@/components/FAQSection";
 import ProfitabilityChart from "@/components/ProfitabilityChart";
 import OccupancyChart from "@/components/OccupancyChart";
+import StepsSection from "@/components/StepsSection";
 import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
 
 const Index = () => {
@@ -105,13 +107,31 @@ const Index = () => {
           transition={{ delay: 0.7 }}
           className="relative mx-auto max-w-5xl mt-20"
         >
-          <div className="glass rounded-xl overflow-hidden">
-            <img
-              src="/lovable-uploads/c32c6788-5e4a-4fee-afee-604b03113c7f.png"
-              alt="Dashboard Anfitrião 10x"
-              className="w-full h-auto"
-            />
-          </div>
+          <Card className="glass rounded-xl overflow-hidden p-8">
+            <div className="text-center">
+              <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-primary/10 mb-6">
+                <TrendingUp className="w-10 h-10 text-primary" />
+              </div>
+              <h3 className="text-2xl font-bold mb-4">Dashboard Anfitrião 10x</h3>
+              <p className="text-gray-400 mb-6">
+                Acompanhe seus resultados em tempo real com nossa plataforma exclusiva
+              </p>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div className="bg-black/40 rounded-lg p-4">
+                  <div className="text-3xl font-bold text-primary mb-2">+300%</div>
+                  <div className="text-sm text-gray-400">Aumento médio de receita</div>
+                </div>
+                <div className="bg-black/40 rounded-lg p-4">
+                  <div className="text-3xl font-bold text-primary mb-2">95%</div>
+                  <div className="text-sm text-gray-400">Taxa de ocupação</div>
+                </div>
+                <div className="bg-black/40 rounded-lg p-4">
+                  <div className="text-3xl font-bold text-primary mb-2">4.9★</div>
+                  <div className="text-sm text-gray-400">Avaliação média</div>
+                </div>
+              </div>
+            </div>
+          </Card>
         </motion.div>
       </motion.section>
 
@@ -137,6 +157,9 @@ const Index = () => {
           <OccupancyChart />
         </div>
       </section>
+
+      {/* Steps Section */}
+      <StepsSection />
 
       {/* Contact Form Section */}
       <div id="contact" className="bg-black">
