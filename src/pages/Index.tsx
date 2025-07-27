@@ -37,18 +37,18 @@ const Index = () => {
         >
           <span className="text-sm font-medium">
             <Home className="w-4 h-4 inline-block mr-2" />
-            Consultoria Profissional para Airbnb
+            Marketing Imobiliário Especializado
           </span>
         </motion.div>
         
         <div className="max-w-4xl relative z-10">
           <h1 className="text-5xl md:text-7xl font-bold mb-4 tracking-tight text-left">
             <span className="text-gray-200">
-              <TextGenerateEffect words="Multiplique sua receita" />
+              <TextGenerateEffect words="Feche 10x mais" />
             </span>
             <br />
             <span className="text-primary font-bold">
-              <TextGenerateEffect words="no Airbnb em 30 dias" />
+              <TextGenerateEffect words="clientes imobiliários" />
             </span>
           </h1>
           
@@ -58,8 +58,8 @@ const Index = () => {
             transition={{ delay: 0.4 }}
             className="text-lg md:text-xl text-gray-200 mb-8 max-w-2xl text-left"
           >
-            Transforme sua propriedade em uma <span className="text-primary font-bold">máquina de receita</span> com nossa consultoria especializada de marketing, otimização de preços e estratégias comprovadas.{" "}
-            <span className="text-white">Crescimento médio de 300% garantido.</span>
+            Estratégias de <span className="text-primary font-bold">marketing imobiliário</span> que convertem leads em vendas. Nossa consultoria especializada aumenta seu faturamento com técnicas comprovadas.{" "}
+            <span className="text-white">Aumento médio de 300% nas vendas.</span>
           </motion.p>
           
           <motion.div
@@ -69,7 +69,7 @@ const Index = () => {
             className="flex flex-col sm:flex-row gap-4 items-start mb-8"
           >
             <Button size="lg" className="button-gradient">
-              Quero Multiplicar Minha Receita
+              Quero Vender Mais Imóveis
             </Button>
             <Button size="lg" variant="link" className="text-white">
               Ver Resultados <ArrowRight className="ml-2 w-4 h-4" />
@@ -84,11 +84,11 @@ const Index = () => {
           >
             <div className="flex items-center gap-2">
               <TrendingUp className="w-4 h-4 text-primary" />
-              <span>+300% de receita média</span>
+              <span>+300% em vendas médias</span>
             </div>
             <div className="flex items-center gap-2">
               <Users className="w-4 h-4 text-primary" />
-              <span>+100 anfitriões atendidos</span>
+              <span>+100 corretores atendidos</span>
             </div>
             <div className="flex items-center gap-2">
               <Star className="w-4 h-4 text-primary" />
@@ -125,7 +125,7 @@ const Index = () => {
               </div>
               
               <h3 className="text-3xl font-bold mb-8 text-center bg-gradient-to-r from-primary to-orange-400 bg-clip-text text-transparent">
-                Dashboard Anfitrião 10x
+                Dashboard Corretor 10x
               </h3>
               
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -134,7 +134,7 @@ const Index = () => {
                     <div className="w-8 h-8 bg-primary/20 rounded-lg flex items-center justify-center">
                       <TrendingUp className="w-4 h-4 text-primary" />
                     </div>
-                    <span className="text-sm text-gray-400">Receita</span>
+                    <span className="text-sm text-gray-400">Vendas</span>
                   </div>
                   <div className="text-3xl font-bold text-primary mb-1">+300%</div>
                   <div className="text-sm text-gray-400">Aumento médio</div>
@@ -145,10 +145,10 @@ const Index = () => {
                     <div className="w-8 h-8 bg-orange-500/20 rounded-lg flex items-center justify-center">
                       <Users className="w-4 h-4 text-orange-500" />
                     </div>
-                    <span className="text-sm text-gray-400">Ocupação</span>
+                    <span className="text-sm text-gray-400">Conversão</span>
                   </div>
-                  <div className="text-3xl font-bold text-orange-500 mb-1">95%</div>
-                  <div className="text-sm text-gray-400">Taxa média</div>
+                  <div className="text-3xl font-bold text-orange-500 mb-1">85%</div>
+                  <div className="text-sm text-gray-400">Taxa leads</div>
                 </div>
                 
                 <div className="bg-black/60 backdrop-blur-sm rounded-xl p-6 border border-white/10 hover:border-primary/30 transition-all duration-300">
@@ -180,7 +180,7 @@ const Index = () => {
             Resultados <span className="text-primary">Comprovados</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Veja como nossos clientes transformaram seus negócios no Airbnb
+            Veja como nossos clientes multiplicaram suas vendas imobiliárias
           </p>
         </motion.div>
 
@@ -226,7 +226,7 @@ const Index = () => {
             Pronto para <span className="text-primary">10x</span> sua receita?
           </h2>
           <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Junte-se a centenas de anfitriões que já transformaram suas propriedades em negócios de sucesso.
+            Junte-se a centenas de corretores que já multiplicaram suas vendas com nossas estratégias.
           </p>
           <Button size="lg" className="button-gradient">
             Começar Agora - Consulta Gratuita
