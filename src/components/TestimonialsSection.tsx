@@ -9,51 +9,51 @@ import { Star } from "lucide-react";
 const testimonials = [
   {
     name: "Carlos Silva",
-    role: "Proprietário de Apartamento no Ipanema",
+    role: "Corretor de Imóveis - Rio de Janeiro",
     initial: "CS",
-    content: "Em 3 meses minha receita triplicou! O Anfitrião 10x transformou meu apartamento em uma máquina de fazer dinheiro. A taxa de ocupação passou de 40% para 95%.",
+    content: "Em 3 meses minhas vendas triplicaram! O Corretor 10x transformou minha abordagem de marketing. Agora fecho 15 imóveis por mês contra 5 antes.",
     rating: 5,
-    result: "+300% receita"
+    result: "+300% vendas"
   },
   {
     name: "Marina Santos",
-    role: "Anfitriã de Pousada em Búzios",
+    role: "Corretora Especialista em Luxo",
     initial: "MS",
-    content: "Antes eu tinha dor de cabeça com preços e comunicação. Agora tudo é automático e minha pousada está sempre lotada. Melhor investimento que já fiz!",
+    content: "Antes eu tinha dificuldade para gerar leads qualificados. Agora minha agenda está sempre cheia e fecho negócios de alto valor. Melhor investimento que já fiz!",
     rating: 5,
-    result: "+250% ocupação"
+    result: "+250% comissões"
   },
   {
     name: "Roberto Oliveira",
-    role: "Investidor Imobiliário",
+    role: "Corretor Autônomo",
     initial: "RO",
-    content: "Tenho 5 propriedades no Airbnb e o Anfitrião 10x cuida de tudo. Minha receita passou de R$ 8.000 para R$ 32.000 mensais. Equipe sensacional!",
+    content: "Trabalho há 10 anos no mercado e o Corretor 10x revolucionou meus resultados. Minha comissão passou de R$ 15.000 para R$ 60.000 mensais. Equipe sensacional!",
     rating: 5,
-    result: "+400% ROI"
+    result: "+400% faturamento"
   },
   {
     name: "Ana Costa",
-    role: "Proprietária de Chalé em Gramado",
+    role: "Corretora Iniciante",
     initial: "AC",
-    content: "Eu era iniciante no Airbnb e estava perdida. O time me ensinou tudo e otimizou meu anúncio. Agora tenho lista de espera de hóspedes!",
+    content: "Eu era nova no mercado imobiliário e estava perdida. O time me ensinou todas as estratégias e otimizou meu perfil. Agora tenho fila de clientes esperando!",
     rating: 5,
-    result: "+180% reservas"
+    result: "+180% contratos"
   },
   {
     name: "Paulo Mendes",
-    role: "Anfitrião Superhost em Floripa",
+    role: "Corretor Top de Vendas",
     initial: "PM",
-    content: "Já era Superhost, mas com o Anfitrião 10x consegui maximizar ainda mais meus resultados. A gestão de preços dinâmica é revolucionária!",
+    content: "Já era top nas vendas, mas com o Corretor 10x consegui maximizar ainda mais meus resultados. As estratégias de captação são revolucionárias!",
     rating: 5,
     result: "+150% receita"
   },
   {
     name: "Fernanda Lima",
-    role: "Proprietária de Casa na Chapada",
+    role: "Corretora de Imóveis Comerciais",
     initial: "FL",
-    content: "Saí do vermelho para o lucro em apenas 2 meses. O atendimento é impecável e os resultados falam por si só. Recomendo de olhos fechados!",
+    content: "Saí de 2 vendas para 12 vendas mensais em apenas 2 meses. O atendimento é impecável e os resultados falam por si só. Recomendo de olhos fechados!",
     rating: 5,
-    result: "+320% lucro"
+    result: "+500% lucro"
   }
 ];
 
@@ -69,7 +69,7 @@ const TestimonialsSection = () => {
           className="text-center mb-16"
         >
           <h2 className="text-5xl font-normal mb-4">
-            Anfitriões que <span className="text-primary">Multiplicaram</span> seus Resultados
+            Corretores que <span className="text-primary">Multiplicaram</span> seus Resultados
           </h2>
           <p className="text-muted-foreground text-lg">
             Veja os depoimentos reais dos nossos clientes
