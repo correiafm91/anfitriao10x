@@ -9,51 +9,51 @@ import { Star } from "lucide-react";
 const testimonials = [
   {
     name: "Carlos Silva",
-    role: "Corretor de Imóveis - Rio de Janeiro",
+    role: "Proprietário de Apartamento - Copacabana",
     initial: "CS",
-    content: "Em 3 meses minhas vendas triplicaram! O Corretor 10x transformou minha abordagem de marketing. Agora fecho 15 imóveis por mês contra 5 antes.",
+    content: "Migrei do aluguel tradicional para temporada e em 3 meses triplicou minha renda! O Imóvel 10x me ensinou tudo. Saí de R$ 2.500 para R$ 8.500 mensais.",
     rating: 5,
-    result: "+300% vendas"
+    result: "+340% renda"
   },
   {
     name: "Marina Santos",
-    role: "Corretora Especialista em Luxo",
+    role: "Proprietária de Casa - Gramado",
     initial: "MS",
-    content: "Antes eu tinha dificuldade para gerar leads qualificados. Agora minha agenda está sempre cheia e fecho negócios de alto valor. Melhor investimento que já fiz!",
+    content: "Tinha uma casa parada há meses no aluguel tradicional. Com a consultoria, transformei em pousada de temporada. Agora tá sempre lotada!",
     rating: 5,
-    result: "+250% comissões"
+    result: "+280% ocupação"
   },
   {
     name: "Roberto Oliveira",
-    role: "Corretor Autônomo",
+    role: "Investidor Imobiliário",
     initial: "RO",
-    content: "Trabalho há 10 anos no mercado e o Corretor 10x revolucionou meus resultados. Minha comissão passou de R$ 15.000 para R$ 60.000 mensais. Equipe sensacional!",
+    content: "Tenho 4 imóveis e todos migraram para temporada com ajuda do Imóvel 10x. Minha renda mensal passou de R$ 12.000 para R$ 48.000. Incrível!",
     rating: 5,
-    result: "+400% faturamento"
+    result: "+400% receita"
   },
   {
     name: "Ana Costa",
-    role: "Corretora Iniciante",
+    role: "Proprietária Iniciante",
     initial: "AC",
-    content: "Eu era nova no mercado imobiliário e estava perdida. O time me ensinou todas as estratégias e otimizou meu perfil. Agora tenho fila de clientes esperando!",
+    content: "Herdei um apartamento e não sabia o que fazer. O time me guiou na migração para Airbnb. Agora tenho renda passiva garantida todo mês!",
     rating: 5,
-    result: "+180% contratos"
+    result: "+220% rentabilidade"
   },
   {
     name: "Paulo Mendes",
-    role: "Corretor Top de Vendas",
+    role: "Dono de Chalé em Campos do Jordão",
     initial: "PM",
-    content: "Já era top nas vendas, mas com o Corretor 10x consegui maximizar ainda mais meus resultados. As estratégias de captação são revolucionárias!",
+    content: "Já alugava por temporada, mas com as estratégias do Imóvel 10x consegui otimizar preços e ocupação. Os resultados superaram expectativas!",
     rating: 5,
-    result: "+150% receita"
+    result: "+180% lucro"
   },
   {
     name: "Fernanda Lima",
-    role: "Corretora de Imóveis Comerciais",
+    role: "Proprietária de Cobertura - Ipanema",
     initial: "FL",
-    content: "Saí de 2 vendas para 12 vendas mensais em apenas 2 meses. O atendimento é impecável e os resultados falam por si só. Recomendo de olhos fechados!",
+    content: "Estava no vermelho com aluguel tradicional. Em 2 meses no temporada já recuperei o investimento. O suporte é excepcional!",
     rating: 5,
-    result: "+500% lucro"
+    result: "+450% ROI"
   }
 ];
 
@@ -69,7 +69,7 @@ const TestimonialsSection = () => {
           className="text-center mb-16"
         >
           <h2 className="text-5xl font-normal mb-4">
-            Corretores que <span className="text-primary">Multiplicaram</span> seus Resultados
+            Proprietários que <span className="text-primary">Multiplicaram</span> sua Renda
           </h2>
           <p className="text-muted-foreground text-lg">
             Veja os depoimentos reais dos nossos clientes

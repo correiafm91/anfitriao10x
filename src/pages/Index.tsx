@@ -37,18 +37,18 @@ const Index = () => {
         >
           <span className="text-sm font-medium">
             <Home className="w-4 h-4 inline-block mr-2" />
-            Marketing Imobiliário Especializado
+            Consultoria para Aluguel de Temporada
           </span>
         </motion.div>
         
         <div className="max-w-4xl relative z-10">
           <h1 className="text-5xl md:text-7xl font-bold mb-4 tracking-tight text-left">
             <span className="text-gray-200">
-              <TextGenerateEffect words="Feche 10x mais" />
+              <TextGenerateEffect words="Ganhe 10x mais" />
             </span>
             <br />
             <span className="text-primary font-bold">
-              <TextGenerateEffect words="clientes imobiliários" />
+              <TextGenerateEffect words="com aluguel de temporada" />
             </span>
           </h1>
           
@@ -58,8 +58,8 @@ const Index = () => {
             transition={{ delay: 0.4 }}
             className="text-lg md:text-xl text-gray-200 mb-8 max-w-2xl text-left"
           >
-            Estratégias de <span className="text-primary font-bold">marketing imobiliário</span> que convertem leads em vendas. Nossa consultoria especializada aumenta seu faturamento com técnicas comprovadas.{" "}
-            <span className="text-white">Aumento médio de 300% nas vendas.</span>
+            Migre do <span className="text-primary font-bold">aluguel tradicional para temporada</span> e multiplique sua renda. Nossa consultoria especializada otimiza seu imóvel com estratégias comprovadas.{" "}
+            <span className="text-white">Aumento médio de 420% na renda.</span>
           </motion.p>
           
           <motion.div
@@ -69,10 +69,10 @@ const Index = () => {
             className="flex flex-col sm:flex-row gap-4 items-start mb-8"
           >
             <Button size="lg" className="button-gradient">
-              Quero Vender Mais Imóveis
+              Quero Ganhar Mais com Meu Imóvel
             </Button>
             <Button size="lg" variant="link" className="text-white">
-              Ver Resultados <ArrowRight className="ml-2 w-4 h-4" />
+              Ver Como Funciona <ArrowRight className="ml-2 w-4 h-4" />
             </Button>
           </motion.div>
 
@@ -84,19 +84,19 @@ const Index = () => {
           >
             <div className="flex items-center gap-2">
               <TrendingUp className="w-4 h-4 text-primary" />
-              <span>+300% em vendas médias</span>
+              <span>+420% em renda média</span>
             </div>
             <div className="flex items-center gap-2">
               <Users className="w-4 h-4 text-primary" />
-              <span>+100 corretores atendidos</span>
+              <span>+200 proprietários atendidos</span>
             </div>
             <div className="flex items-center gap-2">
               <Star className="w-4 h-4 text-primary" />
-              <span>4.9/5 de satisfação</span>
+              <span>4.8/5 de satisfação</span>
             </div>
             <div className="flex items-center gap-2">
               <Shield className="w-4 h-4 text-primary" />
-              <span>Garantia de 30 dias</span>
+              <span>Garantia de resultados</span>
             </div>
           </motion.div>
         </div>
@@ -125,7 +125,7 @@ const Index = () => {
               </div>
               
               <h3 className="text-3xl font-bold mb-8 text-center bg-gradient-to-r from-primary to-orange-400 bg-clip-text text-transparent">
-                Dashboard Corretor 10x
+                Dashboard Imóvel 10x
               </h3>
               
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -134,9 +134,9 @@ const Index = () => {
                     <div className="w-8 h-8 bg-primary/20 rounded-lg flex items-center justify-center">
                       <TrendingUp className="w-4 h-4 text-primary" />
                     </div>
-                    <span className="text-sm text-gray-400">Vendas</span>
+                    <span className="text-sm text-gray-400">Renda</span>
                   </div>
-                  <div className="text-3xl font-bold text-primary mb-1">+300%</div>
+                  <div className="text-3xl font-bold text-primary mb-1">+420%</div>
                   <div className="text-sm text-gray-400">Aumento médio</div>
                 </div>
                 
@@ -145,10 +145,10 @@ const Index = () => {
                     <div className="w-8 h-8 bg-orange-500/20 rounded-lg flex items-center justify-center">
                       <Users className="w-4 h-4 text-orange-500" />
                     </div>
-                    <span className="text-sm text-gray-400">Conversão</span>
+                    <span className="text-sm text-gray-400">Ocupação</span>
                   </div>
-                  <div className="text-3xl font-bold text-orange-500 mb-1">85%</div>
-                  <div className="text-sm text-gray-400">Taxa leads</div>
+                  <div className="text-3xl font-bold text-orange-500 mb-1">95%</div>
+                  <div className="text-sm text-gray-400">Taxa média</div>
                 </div>
                 
                 <div className="bg-black/60 backdrop-blur-sm rounded-xl p-6 border border-white/10 hover:border-primary/30 transition-all duration-300">
@@ -180,7 +180,7 @@ const Index = () => {
             Resultados <span className="text-primary">Comprovados</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Veja como nossos clientes multiplicaram suas vendas imobiliárias
+            Veja como proprietários multiplicaram sua renda com aluguel de temporada
           </p>
         </motion.div>
 
@@ -223,17 +223,17 @@ const Index = () => {
           className="bg-[#0A0A0A]/80 backdrop-blur-lg border border-white/10 rounded-2xl p-8 md:p-12 text-center relative z-10"
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Pronto para <span className="text-primary">10x</span> sua receita?
+            Pronto para <span className="text-primary">10x</span> sua renda?
           </h2>
           <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Junte-se a centenas de corretores que já multiplicaram suas vendas com nossas estratégias.
+            Junte-se a centenas de proprietários que já multiplicaram sua renda com aluguel de temporada.
           </p>
           <Button size="lg" className="button-gradient">
             Começar Agora - Consulta Gratuita
             <ArrowRight className="ml-2 w-4 h-4" />
           </Button>
           <p className="text-sm text-muted-foreground mt-4">
-            ✓ Sem compromisso ✓ Análise gratuita ✓ Resultados em 30 dias
+            ✓ Sem compromisso ✓ Análise gratuita ✓ Resultados em 60 dias
           </p>
         </motion.div>
       </section>
