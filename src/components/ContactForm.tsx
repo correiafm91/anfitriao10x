@@ -37,7 +37,6 @@ const ContactForm = () => {
           transition={{ delay: 0.1, duration: 0.5 }}
           className="text-lg text-gray-400"
         >
-          Preencha o formulário abaixo e nossa equipe entrará em contato em até 24 horas
         </motion.p>
       </div>
 
