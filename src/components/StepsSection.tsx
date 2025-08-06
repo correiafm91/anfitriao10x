@@ -13,8 +13,8 @@ const steps = [
   },
   {
     number: "02",
-    title: "Otimização do Anúncio",
-    description: "Reformulamos título, descrição e amenidades para aumentar a visibilidade e atratividade.",
+    title: "Criação de Anúncio",
+    description: "Criamos anúncios profissionais e escolhemos as melhores plataformas como Airbnb, OLX e outras.",
     icon: FileText,
     color: "from-orange-500/20 to-orange-500/5"
   },
