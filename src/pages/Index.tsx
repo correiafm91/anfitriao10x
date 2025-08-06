@@ -125,7 +125,7 @@ const Index = () => {
               </div>
               
               <h3 className="text-3xl font-bold mb-8 text-center bg-gradient-to-r from-primary to-orange-400 bg-clip-text text-transparent">
-                Dashboard Imóvel 10x
+                Dashboard Anfitrião 10x
               </h3>
               
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">

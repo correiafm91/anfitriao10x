@@ -58,7 +58,7 @@ const ContactForm = () => {
             size="lg"
             disabled={isSubmitted}
           >
-            {isSubmitted ? "Enviado!" : "Solicitar Consultoria Gratuita"}
+            {isSubmitted ? "Enviado!" : "Entrar em Contato"}
           </Button>
         </motion.div>
       </div>
